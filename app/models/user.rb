@@ -4,6 +4,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
+  has_one :profile
+  
+  after_create :create_profile
+  
   attr_accessor :login
   
   def self.find_for_database_authentication(warden_conditions)
