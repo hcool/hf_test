@@ -12,6 +12,10 @@ img {
   font-size: inherit;
   }
 
+.navbar{
+  margin-bottom: 0px;
+}
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -38,7 +42,6 @@ main {
   background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
   }
 section {
   @extend .row;
